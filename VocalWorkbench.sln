@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocalWorkbench.Apps.Desktop", "VocalWorkbench.Apps.Desktop\VocalWorkbench.Apps.Desktop.csproj", "{DB9CC684-51BF-4E65-A7A2-FD7AFEDC34DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB9CC684-51BF-4E65-A7A2-FD7AFEDC34DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9CC684-51BF-4E65-A7A2-FD7AFEDC34DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9CC684-51BF-4E65-A7A2-FD7AFEDC34DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9CC684-51BF-4E65-A7A2-FD7AFEDC34DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6548301D-92A1-49F4-82E8-56557B2092D4}
+	EndGlobalSection
+EndGlobal
