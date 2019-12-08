@@ -3,10 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VocalWorkbench.Apps.Desktop.Features.Splash.Views"
+        xmlns:assets="clr-namespace:VocalWorkbench.Apps.Desktop.Assets"
         mc:Ignorable="d"
-        Title="SplashWindow" Height="450" Width="800">
-    <Grid>
-        
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" WindowStyle="None"
+        Title="Vocal Workbench" Height="300" Width="450">
+
+    <Border BorderThickness="1" BorderBrush="{DynamicResource HighlightDeepColour}" Background="{DynamicResource BackgroundMidColour}">
+        <Grid>
+        <assets:WocalWorkbenchLogo_Solid Foreground="{DynamicResource HighlightMidColour}" Margin="100" VerticalAlignment="Center" HorizontalAlignment="Center" />
     </Grid>
+    </Border>
+
 </Window>
