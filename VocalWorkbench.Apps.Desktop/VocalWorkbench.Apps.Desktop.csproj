@@ -55,6 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Assets\WocalWorkbenchLogo-Hallow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\WocalWorkbenchLogo-Solid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Features\Shell\Views\ShellWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -66,6 +74,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\WocalWorkbenchLogo-Hallow.xaml.cs">
+      <DependentUpon>WocalWorkbenchLogo-Hallow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\WocalWorkbenchLogo-Solid.xaml.cs">
+      <DependentUpon>WocalWorkbenchLogo-Solid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Features\Shell\ViewModels\ShellWindowViewModel.cs" />
     <Compile Include="Features\Shell\Views\ShellWindow.xaml.cs">
@@ -109,7 +123,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Lustd">
-      <Version>1.2.1</Version>
+      <Version>1.2.2</Version>
     </PackageReference>
     <PackageReference Include="ReactiveUI">
       <Version>10.5.31</Version>
