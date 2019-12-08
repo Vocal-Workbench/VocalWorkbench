@@ -1,0 +1,3 @@
+cd Assets\ApplicationIcon
+"C:\Program Files\ImageMagick-7.0.9-Q16\convert.exe" VocalWorkbench-ApplicationIcon-16.png VocalWorkbench-ApplicationIcon-32.png VocalWorkbench-ApplicationIcon-64.png VocalWorkbench-ApplicationIcon-96.png VocalWorkbench-ApplicationIcon-128.png VocalWorkbench-ApplicationIcon-192.png VocalWorkbench-ApplicationIcon-256.png VocalWorkbench-ApplicationIcon-512.png VocalWorkbench-ApplicationIcon.ico
+cd ..\..\
