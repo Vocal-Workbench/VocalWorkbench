@@ -5,19 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VocalWorkbench.Apps.Desktop.Features.Shell.Views"
         xmlns:controls="clr-namespace:Lustd.Controls;assembly=Lustd"
+        xmlns:controls1="clr-namespace:VocalWorkbench.Apps.Desktop.Controls"
         mc:Ignorable="d"
+        x:Name="ShellRoot"
         Title="Vocal Workbench"
-        MinWidth="340" MinHeight="360"
-        Height="500" Width="360">
+        MinWidth="480" MinHeight="320"
+        Height="600" Width="800">
 
     <controls:LustdWindowEnhanced.TitleContent>
         <!--<assets:WindowTitle />-->
-        <TextBlock Text="Vocal Workbench" />
+        <controls1:WindowTitle />
     </controls:LustdWindowEnhanced.TitleContent>
+
+    <controls:LustdWindowEnhanced.CommandContent>
+        <!-- Alt Titlebar Command Content here, with consistent Button and ToggleButton styles. -->
+        <StackPanel Margin="0,0,5,0" Orientation="Horizontal">
+            <ToggleButton ToolTip="Settings" IsChecked="{Binding ElementName=ShellRoot, Path=Topmost, Mode=TwoWay}">
+                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE898;" />
+            </ToggleButton>
+        </StackPanel>
+    </controls:LustdWindowEnhanced.CommandContent>
 
     <controls:LustdWindowEnhanced.ActionContent>
         <!-- Alt Titlebar Action Content here, with consistent Button and ToggleButton styles. -->
-        <StackPanel Margin="10,0" Orientation="Horizontal">
+        <StackPanel Margin="0,0,5,0" Orientation="Horizontal">
             <Button x:Name="SettingsButton" ToolTip="Settings">
                 <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE713;" />
             </Button>

@@ -58,11 +58,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Assets\WocalWorkbenchLogo-Hallow.xaml">
+    <Page Include="Controls\VocalWorkbenchLogo-Hallow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Assets\WocalWorkbenchLogo-Solid.xaml">
+    <Page Include="Controls\VocalWorkbenchLogo-Solid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -81,11 +81,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Assets\WocalWorkbenchLogo-Hallow.xaml.cs">
-      <DependentUpon>WocalWorkbenchLogo-Hallow.xaml</DependentUpon>
+    <Compile Include="Controls\WindowTitle.cs" />
+    <Compile Include="Controls\VocalWorkbenchLogo-Hallow.xaml.cs">
+      <DependentUpon>VocalWorkbenchLogo-Hallow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Assets\WocalWorkbenchLogo-Solid.xaml.cs">
-      <DependentUpon>WocalWorkbenchLogo-Solid.xaml</DependentUpon>
+    <Compile Include="Controls\VocalWorkbenchLogo-Solid.xaml.cs">
+      <DependentUpon>VocalWorkbenchLogo-Solid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Features\Shell\ViewModels\ShellWindowViewModel.cs" />
     <Compile Include="Features\Shell\Views\ShellWindow.xaml.cs">
@@ -95,6 +96,10 @@
     <Compile Include="Features\Splash\Views\SplashWindow.xaml.cs">
       <DependentUpon>SplashWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -153,5 +158,6 @@
   <ItemGroup>
     <Resource Include="VocalWorkbench-ApplicationIcon.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

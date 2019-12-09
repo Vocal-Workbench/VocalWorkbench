@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:assets="clr-namespace:VocalWorkbench.Apps.Desktop.Assets"
+        xmlns:controls="clr-namespace:VocalWorkbench.Apps.Desktop.Controls"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize" WindowStyle="None"
@@ -11,7 +11,7 @@
 
     <Border BorderThickness="1" BorderBrush="{DynamicResource HighlightDeepColour}" Background="{DynamicResource BackgroundMidColour}">
         <Grid>
-        <assets:WocalWorkbenchLogo_Solid Foreground="{DynamicResource HighlightMidColour}" Margin="100" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <controls:VocalWorkbenchLogo_Solid Foreground="{DynamicResource HighlightMidColour}" Margin="100" VerticalAlignment="Center" HorizontalAlignment="Center" />
     </Grid>
     </Border>
 
